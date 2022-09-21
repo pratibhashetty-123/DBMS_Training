@@ -1,4 +1,4 @@
------Create two tables(employee and Department) consraints
+---Create two tables(employee and Department) consraints
 
 
 CREATE table dlithe.dbo.PS_DEPARTMENT
