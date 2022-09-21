@@ -1,0 +1,23 @@
+-----Create two tables(employee and Department) consraints
+
+
+CREATE table dlithe.dbo.PS_DEPARTMENT
+(
+  emp_id varchar(100) PRIMARY KEY,
+  dept_name varchar(100)
+);
+CREATE table dlithe.dbo.PS_EMPLOYEE
+(
+ emp_name varchar(100) not null,
+ emp_id varchar(100) FOREIGN KEY REFERENCES PS_DEPARTMENT(emp_id),
+ emp_phone int UNIQUE,
+ age int check(age>=18),
+ join_date date default GETDATE()
+ );
+
+insert into dlithe.dbo.PS_DEPARTMENT values ('01','hr'),('02','sales'),('03','hr'),('04','sales');
+
+insert into dlithe.dbo.PS_EMPLOYEE (emp_name,emp_id,emp_phone,age)values ('raj','01',83564729,19),('ram','02',973564729,39),('sham','03',56564729,29);
+
+select * from dlithe.dbo.PS_DEPARTMENT;
+select * from dlithe.dbo.PS_EMPLOYEE;
