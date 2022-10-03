@@ -621,15 +621,16 @@ insert into employee (emp_id,name,dept_id,age) values (3,'Pallavi',4,25);
 insert into employee values (4,'Jayanth',3,'Jayanth@evry.com',23);
 
 
-select * from employee;
+select * from sj_store;
 select * from dept;
 
 delete from dept where dept_id=4;
 update dept set dept_id=4 where dept_Name='Design';
 
-select * from employee;
-select * from dept;
+select * from ps_employee;
+select * from ps_emp_target;
 
+select * from ps_salary
 
 
 
