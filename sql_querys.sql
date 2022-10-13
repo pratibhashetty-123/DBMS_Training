@@ -615,6 +615,11 @@ email varchar(50) default 'company@email.com',
 Age int check(age>21)
 );
 
+aLTER TABLE employee
+ALTER COLUMN name int
+
+select * from employee
+
 insert into employee values (1,'Anitha',1,'Anitha@evry.com',22);
 insert into employee values (2,'Ankith',3,'Ankith@evry.com',22);
 insert into employee (emp_id,name,dept_id,age) values (3,'Pallavi',4,25);
